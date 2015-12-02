@@ -1,0 +1,95 @@
+\documentclass[12pt, openany]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[frenchb]{babel}
+\usepackage{libertine}
+\usepackage[pdftex]{graphicx}
+\usepackage{lastpage}
+\usepackage[toc,page]{appendix}
+\usepackage{hyperref}
+
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+\newcommand{\hsp}{\hspace{20pt}}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\renewcommand{\appendixpagename}{}
+
+\begin{document}
+
+\begin{titlepage}
+  \begin{sffamily}
+  \begin{center}
+
+    %Logo de l'INSA de Rouen
+    \includegraphics[scale=0.8]{./images/offlinedinosaru.png}~\\[1.5cm]
+
+    %Titre de la matière
+    \textsc{\LARGE Conception et Architecture des Systèmes d'Information}\\[2cm]
+
+    %Type de rapport
+    \textsc{\Large Monographie}\\[1.5cm]
+
+    %Titre du sujet
+    \HRule \\[0.4cm]
+    { \huge \bfseries CASIFini - Le Web Offline }
+
+    %Logo ESITPA
+    \HRule \\[2cm]
+    \includegraphics[scale=0.3]{./images/disconnected.PNG}
+    \\[2cm]
+
+    \begin{minipage}{0.4\textwidth}
+      \begin{flushleft} \large
+      %Nom et prenom desredacteurs
+        Anthony \textsc{Courtin}\\
+        Alexandre \textsc{Hottin}\\
+      \end{flushleft}
+    \end{minipage}
+    \begin{minipage}{0.4\textwidth}
+      \begin{flushright} \large
+      %Nom et prenom du prof
+        \emph{A l'attention de :} Frederic Baucher \\
+      \end{flushright}
+    \end{minipage}
+
+    \vfill
+
+    %Date
+    {\large Septembre 2015 — Janvier 2016}
+
+  \end{center}
+  \end{sffamily}
+\end{titlepage}
+
+%Table des matières
+\tableofcontents{}
+\newpage
+
+\chapter{Question d'amorce}
+\input{amorce.tex}
+
+\chapter{Partie A}
+\input{partieA.tex}
+
+\chapter{Partie }
+\input{partieB.tex}
+
+% \chapter{Etat de l'art}
+% \input{etat_de_l_art.tex}
+
+% \chapter{Conclusion}
+% \input{conclusion.tex}
+
+% \chapter{Bibliographie}
+% \input{references.tex}
+
+% \chapter{Annexes}
+% \input{annexe.tex}
+
+%Tables des tableaux
+% \listoftables 
+%Table des figures
+\listoffigures
+
+\end{document}
