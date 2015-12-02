@@ -37,5 +37,77 @@
 		\item Chapitre 16 - Bases de données (Indexed Database \& Web SQL Database);
 		\item Chapitre 17 - Applications web hors ligne.
 	\end{itemize}
+	~\\
 
+	Jean-Pierre Vincent et Jonathan Verrecchia, \textit{HTML5 - De la page web à l'application web}, Dunod, 6 juillet 2011, 256 pages.
+	\begin{itemize}
+		\item Chapitre 10 - Application Web Offline.
+	\end{itemize}
+	~\\
 
+	Peter Lubbers, \textit{Pro HTML5 Programming: Powerful APIs for Richer Internet Application Development}, APress, 1 septembre 2010, 304 pages.
+	\begin{itemize}
+		\item Chapitre 9 - Using the HMTL5 Web Storage API
+		\item Chapitre 10 - Creating HTML5 Offline Web Application 
+	\end{itemize}
+
+\section{A4. Organisations}		
+
+	\subsection{Tata consultancy services}
+		Tata consultancy services (TCS) est une filiale du groupe Indien Tata et est classée parmis les plus importantes sociétés de services en informatique au monde. 
+		Son modèle de livraison de réseau mondial, Global Network Delivery Model, permet de répondre aux besoins de ses clients le plus rapidement possible.
+		L’activité de TCS va du conseil jusqu’à la mise en oeuvre et au suivi des systèmes. De plus, il est possible pour les clients d’externaliser le processus métier ou la mise en place de services d’ingénierie.
+		En ce qui concerne la participation de TCS dans le domaine du Web Offline, elle a publié un Livre blanc disponible à cette adresse : 
+		\url{http://www.tcs.com/SiteCollectionDocuments/White%20Papers/TEG_Whitepaper_Developing_Offline_Web_Application_Using_HTML5_0212-1.pdf}
+
+	\subsection{W3C}
+		Le World Wide Web Consortium est une organisation à but non lucratif s’occupant de la standardisation dans le domaine de l’informatique. Elle fut fondée en 1994 dans le but de promouvoir les technologies du Web.
+		La gestion du W3C est assurée par le MIT, l’ERCIM, l’université Keio et l’université Beihang. 
+		Le W3C est à l’origine de nombreux standads dans le domaine du Web. On peut notamment citer XHTML, SVG, SPARQL et HTML.
+		En ce qui concerne la participation du W3C dans le domaine du Web offline, cette dernière a publier une note de groupe de travail disponible à l’adresse suivante :
+		\url{http://www.w3.org/TR/offline-webapps/}
+
+	\subsection{Mozilla Foundation}
+		La Mozilla Foundation est une organisation à but non lucratif créé le 15 juillet 2003 et situé à Mountain View en Californie. Son but est de développer et de publier des logiciels libre de droit. 
+		La fondation a créé un site web appelé Mozilla Developer Network  (MDN) qui regroupe de la documentation sur les technologies Web telles que HTML, CSS et Javascript.
+		En ce qui concerne la participation de la Mozilla Foundation dans le domaine du Web offline, cette dernière a publier une documentation disponible à l’adresse suivante :
+		\url{https://developer.mozilla.org/fr/Apps/Build/Hors-ligne}
+
+\section{A5. Facteurs}
+	
+	\begin{itemize}
+		\item Functionality $->$ Interoperability (1)
+		\item Portability $->$ Adaptability (2)
+		\item Reliability $->$ Recoverability (3)
+	\end{itemize}
+
+\section{A6. Indicateurs}
+	
+	\begin{itemize}
+		\item Operation Time
+		\item Number of Functions
+		\item Data exchangeability (data format-based) (1)
+		\item System software environmental adaptability (adaptability to OS, network software and cooperated application software) (2)
+		\item Restoration effictiveness (3)
+	\end{itemize}
+
+\section{A7. Références théoriques}
+
+	\subsection{Load Everything pattern}
+		\begin{itemize}
+			\item L’application charge toutes les données dont l’utilisateur a besoin d’utiliser directement
+			\item L’utilisateur utilise les données stockées localement
+			\item Le processus de chargement peut être très long suivant la connexion de l’utilisateur et la quantité de données à télécharger
+		\end{itemize}
+
+	\subsection{Caching pattern}
+		\begin{itemize}
+			\item L’application requête les données au serveur lorsque l’utilisateur en fait la demande et les stocke au cas où l’utilisateur en aurait encore besoin
+			\item On peut citer les applications de messagerie qui stockent un certain nombre de mail, les applications de streaming musical ou bien celles utilisant une 			\item carte
+			\item Il faut que l’application garde le cache à jour afin que l’utilisateur ne soit pas en retard par rapport à ce qu’il y a sur le serveur
+		\end{itemize}
+
+	\subsection{Selectiveness pattern}
+		\begin{itemize}
+			\item Ce pattern fonctionne comme le second à l’exception que l’utilisateur a le choix de ce qu’il souhaite mettre en cache
+		\end{itemize}
