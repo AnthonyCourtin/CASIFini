@@ -26,15 +26,14 @@
 		\item window.sessionStorage pour sauvegarder pendant la période de Session
 		\item window.localStorage pour sauvegarder pour une période plus importante
 	\end{itemize}
-	~\\
 
 	Dans tous les cas, ces objets offrent le même type de fonction permettant d'accéder aux données, de sauvegarder ces dernières ou de les supprimer facilement.\\
 
 	Une fois que la connexion à internet est rétablie, les données stockées en locale doivent être synchronisées avec le serveur distant \textit{(pattern Messaging)} \textit{(pattern Message Endpoint)} \textit{(pattern Message Filter)}. Il faut donc prévoir de créer une queue des données pour être cohérent avec l’évolution des données en mode hors ligne \textit{(pattern Resequencer)}. La transaction des données doit être vérifiée et réussie pour pouvoir passer à la transaction suivante \textit{(pattern Guaranteed Delivery)}. Si la connexion à internet coupe pendant une transaction, c’est comme ci elle n’avait pas été réalisée et doit donc être refaite lors d’une nouvelle connexion à internet. De plus, si des modifications ont été réalisées sur le serveur distant entre deux connexions, ces dernières vont être téléchargées vers le dossier de stockage local \textit{(pattern Shared Database)}.\\
 
-La figure~\ref{schema} explique l'architecture d'une application en web offline.
+La figure~\ref{schema} explique de manière schématique les différentes grandes étapes de fonctionnement d'une application en web offline.
 
- \begin{figure}[H]
+ \begin{figure}[h!]
   \centering
   \includegraphics[width=18cm]{./images/schema.png}
   \caption{Schéma explicatif}
@@ -87,7 +86,7 @@ Stockage des données :
 
 \section{B5. Work Breakdown Structure}
 
- \begin{figure}[H]
+ \begin{figure}[h!]
   \centering
   \includegraphics[width=18cm]{./images/wbs.png}
   \caption{Work Breakdown Structure}
